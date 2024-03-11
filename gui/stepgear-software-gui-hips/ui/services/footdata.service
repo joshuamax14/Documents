@@ -1,0 +1,12 @@
+[Unit]
+Description=FootDataAcquisition
+Requires=bluetooth.service
+#After=plato-initADC.service
+
+[Service]
+ExecStart=/home/motto/gitreconlabco/stepgear/ui/hidapitester -r --vidpid 2023:0001 -l20 --open  --read-input-forever
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

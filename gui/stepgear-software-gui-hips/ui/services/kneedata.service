@@ -1,0 +1,12 @@
+[Unit]
+Description=KneeDataAcquisition
+Requires=bluetooth.service
+#After=plato-initADC.service
+
+[Service]
+ExecStart=/home/motto/gitreconlabco/stepgear/ui/hidapitester --vidpid 2023:0002 -l20 --open  --read-input-forever
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

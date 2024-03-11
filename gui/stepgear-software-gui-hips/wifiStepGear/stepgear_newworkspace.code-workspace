@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "potentiometer",
+			"path": "../../../PlatformIO/Projects/potentiometer"
+		}
+	],
+	"settings": {}
+}
